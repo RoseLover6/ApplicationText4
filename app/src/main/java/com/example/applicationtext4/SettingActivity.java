@@ -17,7 +17,7 @@ public class SettingActivity extends Activity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         TextView name = (TextView) findViewById(R.id.name);
-        name.setText("用户名:"+bundle.getString("name"));
+        name.setText("用户姓名:"+bundle.getString("name"));
         TextView age = (TextView) findViewById(R.id.age);
         age.setText("年龄:"+bundle.getByte("age"));
         TextView hobby = (TextView) findViewById(R.id.hobby);
